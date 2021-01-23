@@ -12,8 +12,10 @@ pipeline {
         stage('npm install') {
             steps {
                 echo 'npming...'
-                npmTool.install(path)
-                echo 'npmed...'
+                // script{                    
+                //     npmTool.install(path)
+                //     echo 'npmed...'
+                // }
             }
         }
     }
